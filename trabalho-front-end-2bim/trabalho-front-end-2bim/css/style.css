@@ -1,0 +1,457 @@
+/* =========================================================
+   Executive Transfer DF - style.css
+   Paleta: preto / grafite / cinza escuro, com dourado nos
+   títulos, bordas e botões de destaque
+   ========================================================= */
+
+:root {
+    --preto: #0f0f0f;
+    --grafite: #1a1a1a;
+    --cinza-escuro: #242424;
+    --dourado: #c8a75d;
+    --dourado-hover: #d9b86c;
+    --texto-principal: #f2f2f2;
+    --texto-secundario: #d0d0d0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: var(--texto-principal);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--dourado);
+    font-weight: 600;
+}
+
+p {
+    color: var(--texto-secundario);
+}
+
+/* evita rolagem horizontal */
+html, body {
+    overflow-x: hidden;
+}
+
+/* ===================== CABEÇALHO ===================== */
+.cabecalho {
+    background-color: var(--preto);
+    padding: 12px 0;
+}
+
+.logo {
+    color: var(--texto-principal) !important;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+.menu-lista .nav-link {
+    color: var(--texto-secundario) !important;
+    margin-left: 12px;
+    transition: color 0.2s ease;
+}
+
+.menu-lista .nav-link:hover {
+    color: var(--dourado) !important;
+}
+
+/* ===================== HERO ===================== */
+.hero {
+    background-color: var(--preto);
+    color: var(--texto-principal);
+    padding: 70px 0;
+}
+
+.hero h1 {
+    color: var(--dourado);
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 1.05rem;
+    color: var(--texto-secundario);
+    margin-bottom: 25px;
+}
+
+.hero-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.img-hero {
+    border-radius: 6px;
+    margin-top: 25px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+/* botão principal: fundo dourado, texto escuro */
+.btn-dourado {
+    background-color: var(--dourado);
+    color: #1a1a1a;
+    padding: 12px 26px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-dourado:hover {
+    background-color: var(--dourado-hover);
+    color: #1a1a1a;
+    transform: translateY(-1px);
+}
+
+/* botão secundário: transparente com borda dourada */
+.btn-whatsapp {
+    background-color: transparent;
+    color: var(--dourado);
+    border: 1px solid var(--dourado);
+    padding: 12px 26px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--dourado);
+    color: #1a1a1a;
+    transform: translateY(-1px);
+}
+
+/* ===================== SEÇÕES GERAIS ===================== */
+.secao {
+    padding: 60px 0;
+}
+
+.secao h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.7rem;
+}
+
+.texto-introdutorio {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--texto-secundario);
+}
+
+/* alterna o fundo das seções entre os tons escuros da paleta */
+.sobre {
+    background-color: var(--grafite);
+}
+
+.veiculo {
+    background-color: var(--preto);
+}
+
+.servicos {
+    background-color: var(--grafite);
+}
+
+.diferenciais {
+    background-color: var(--preto);
+}
+
+.como-funciona {
+    background-color: var(--grafite);
+}
+
+.faq {
+    background-color: var(--grafite);
+}
+
+.contato {
+    background-color: var(--preto);
+}
+
+/* ===================== SOBRE ===================== */
+.img-motorista {
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+/* ===================== VEÍCULO ===================== */
+.lista-veiculo {
+    list-style: disc;
+    padding-left: 20px;
+    color: var(--texto-secundario);
+}
+
+.lista-veiculo li {
+    padding: 6px 0;
+}
+
+/* ===================== CARDS DE SERVIÇO ===================== */
+.card-servico {
+    height: 100%;
+    background-color: var(--cinza-escuro);
+    border: 1px solid #3a3a3a;
+    border-left: 4px solid var(--dourado);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card-servico:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+    transform: translateY(-3px);
+}
+
+.card-servico .card-title {
+    color: var(--dourado);
+    font-size: 1.15rem;
+}
+
+.card-servico .card-text {
+    color: var(--texto-secundario);
+}
+
+/* ===================== CARDS DE DIFERENCIAL ===================== */
+.card-diferencial {
+    height: 100%;
+    background-color: var(--cinza-escuro);
+    border: 1px solid #3a3a3a;
+    border-top: 3px solid var(--dourado);
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card-diferencial:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+    transform: translateY(-3px);
+}
+
+.card-diferencial .card-text {
+    color: var(--texto-secundario);
+}
+
+.diferencial-icone {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+/* ===================== COMO FUNCIONA ===================== */
+.lista-etapas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-etapas p {
+    color: var(--texto-secundario);
+}
+
+.etapa-numero {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 50%;
+    background-color: var(--dourado);
+    color: #1a1a1a;
+    font-weight: 600;
+    margin: 0 auto 12px auto;
+    transition: background-color 0.2s ease;
+}
+
+/* ===================== FAQ ===================== */
+.lista-faq {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.item-faq {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.pergunta-faq {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 16px 5px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: var(--texto-principal);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.pergunta-faq:hover {
+    color: var(--dourado);
+}
+
+/* a resposta começa escondida, o JS troca essa classe quando clica */
+.resposta-faq {
+    display: none;
+    padding: 0 5px 16px 5px;
+    color: var(--texto-secundario);
+}
+
+.resposta-faq.aberta {
+    display: block;
+}
+
+/* ===================== CONTATO ===================== */
+.lista-info-contato {
+    list-style: none;
+    margin-bottom: 25px;
+    padding: 0;
+    color: var(--texto-secundario);
+}
+
+.lista-info-contato li {
+    padding: 4px 0;
+}
+
+.lista-info-contato strong {
+    color: var(--texto-principal);
+}
+
+.form-contato {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.form-contato .form-label {
+    color: var(--texto-secundario);
+}
+
+.form-contato .form-control {
+    background-color: var(--cinza-escuro);
+    border: 1px solid #3a3a3a;
+    color: var(--texto-principal);
+}
+
+.form-contato .form-control:focus {
+    background-color: var(--cinza-escuro);
+    border-color: var(--dourado);
+    color: var(--texto-principal);
+    box-shadow: 0 0 0 0.2rem rgba(200, 167, 93, 0.25);
+}
+
+/* a mensagem de confirmação fica escondida até o envio do formulário */
+.confirmacao-envio {
+    display: none;
+    max-width: 500px;
+    background-color: var(--cinza-escuro);
+    border-left: 4px solid var(--dourado);
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.confirmacao-envio p {
+    color: var(--texto-principal);
+}
+
+.confirmacao-envio.mostrar {
+    display: block;
+}
+
+.seta-whatsapp {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--dourado);
+}
+
+/* ===================== RODAPÉ ===================== */
+.rodape {
+    background-color: var(--preto);
+    color: var(--texto-secundario);
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #2a2a2a;
+}
+
+.rodape p {
+    margin: 4px 0;
+    color: var(--texto-secundario);
+}
+
+/* ===================== BOTÃO FLUTUANTE DE WHATSAPP ===================== */
+.whatsapp-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2e8b57;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.whatsapp-flutuante:hover {
+    background-color: #246b44;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-botoes {
+        justify-content: center;
+    }
+
+    .secao {
+        padding: 40px 0;
+    }
+
+    .secao h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-dourado, .btn-whatsapp {
+        width: 100%;
+        text-align: center;
+    }
+
+    .whatsapp-flutuante {
+        bottom: 12px;
+        right: 12px;
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+}
