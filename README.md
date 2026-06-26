@@ -122,5 +122,8 @@ Ambos participaram ativamente de todas as etapas do desenvolvimento.
 
 ## Links
 
+-repositório GitHub:https://github.com/loading6714/trabalho-front-end-2bim
+
+-GitHub Pages:https://loading6714.github.io/trabalho-front-end-2bim/
 - Repositório GitHub: [INSERIR LINK]
 - GitHub Pages: [INSERIR LINK]
